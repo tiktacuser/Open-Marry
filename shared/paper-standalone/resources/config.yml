@@ -1,0 +1,77 @@
+# OpenMarry for Paper without a proxy.
+# Restart the server after changing this file.
+
+heart:
+  # Heart symbol returned by %hug_heart%
+  symbol: "❤"
+  # What %hug_heart% returns for players who are not married (empty = nothing)
+  empty-output: ""
+  # Heart color of a new marriage. The color is shared: either spouse can change it
+  default-color: "red"
+  # Available colors: name used in /heartcolor -> Minecraft color code
+  colors:
+    red: "&c"
+    pink: "&d"
+    gold: "&6"
+    yellow: "&e"
+    green: "&a"
+    aqua: "&b"
+    blue: "&9"
+    purple: "&5"
+    white: "&f"
+    gray: "&7"
+
+proposal:
+  # How many seconds a marriage proposal stays valid
+  expire-seconds: 60
+
+wedding-effects:
+  # Show hearts above players right after the wedding
+  enabled: true
+  # How many seconds the hearts are shown
+  duration-seconds: 10
+  # How often particles spawn (in ticks, 20 ticks = 1 second)
+  interval-ticks: 10
+  # Height above the player's feet where the hearts appear
+  height-offset: 2.3
+  # Number of particles per spawn
+  particle-count: 3
+
+protection:
+  # Prevent spouses from damaging each other (melee and projectiles)
+  block-partner-damage: true
+
+regeneration:
+  # Regeneration while spouses are close to each other. Disabled by default
+  enabled: false
+  # Radius in blocks within which spouses must be near each other
+  radius: 10.0
+  # Regeneration level (1 = Regeneration I, 2 = Regeneration II, ...)
+  level: 1
+  # How often to check and apply the effect (in ticks)
+  interval-ticks: 40
+  # Effect duration in ticks (it is refreshed every interval)
+  duration-ticks: 60
+
+messages:
+  prefix: "&d❤ &7"
+  only-players: "&cThis command can only be used by players."
+  usage-marry: "&cUsage: &f/marry <player> &7| &f/marry accept &7| &f/marry deny"
+  usage-heartcolor: "&cUsage: &f/heartcolor <color>&7. Available: &f{colors}"
+  player-offline: "&cPlayer &f{player} &cis not online."
+  self-marry: "&cYou can't marry yourself."
+  already-married-self: "&cYou are already married."
+  already-married-other: "&cPlayer &f{player} &cis already married."
+  proposal-sent: "&7You proposed to &f{player}&7. Waiting for an answer."
+  proposal-received: "&f{player} &7has proposed to you! Type &f/marry accept &7or &f/marry deny &7within {seconds} seconds."
+  no-proposal: "&cYou have no pending proposal, or it has expired."
+  proposer-offline: "&cThe player who proposed to you has left the game."
+  proposal-denied-self: "&7You declined the proposal from &f{player}&7."
+  proposal-denied-other: "&f{player} &cdeclined your proposal."
+  married: "&d❤ Congratulations! You are now married to &f{player}&d!"
+  not-married: "&cYou are not married."
+  divorced-self: "&7You are now divorced."
+  divorced-other: "&f{player} &7divorced you."
+  unknown-color: "&cUnknown color. Available: &f{colors}"
+  color-set: "&7Your marriage heart color: {color}&l{heart}"
+  color-changed-other: "&f{player} &7changed your marriage heart color to {color}&l{heart}"

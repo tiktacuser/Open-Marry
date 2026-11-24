@@ -1,0 +1,7 @@
+name: OpenMarry
+version: 1.0.0
+main: ru.openmarry.paper.OpenMarryProxyPlugin
+api-version: '1.21'
+softdepend: [PlaceholderAPI]
+description: Heart icon and spouse bonuses. Marriages are stored by the Velocity proxy (OpenMarry-Velocity)
+authors: [OpenMarry]

@@ -1,0 +1,37 @@
+# OpenMarry for Paper behind a Velocity proxy.
+# Marriages, colors and messages are configured on the proxy (OpenMarry-Velocity plugin).
+# Restart the server after changing this file.
+
+heart:
+  # Heart symbol returned by %hug_heart%
+  symbol: "❤"
+  # What %hug_heart% returns for players who are not married (empty = nothing)
+  empty-output: ""
+
+wedding-effects:
+  # Show hearts above players right after the wedding
+  enabled: true
+  # How many seconds the hearts are shown
+  duration-seconds: 10
+  # How often particles spawn (in ticks, 20 ticks = 1 second)
+  interval-ticks: 10
+  # Height above the player's feet where the hearts appear
+  height-offset: 2.3
+  # Number of particles per spawn
+  particle-count: 3
+
+protection:
+  # Prevent spouses from damaging each other (melee and projectiles)
+  block-partner-damage: true
+
+regeneration:
+  # Regeneration while spouses are close to each other. Disabled by default
+  enabled: false
+  # Radius in blocks within which spouses must be near each other
+  radius: 10.0
+  # Regeneration level (1 = Regeneration I, 2 = Regeneration II, ...)
+  level: 1
+  # How often to check and apply the effect (in ticks)
+  interval-ticks: 40
+  # Effect duration in ticks (it is refreshed every interval)
+  duration-ticks: 60

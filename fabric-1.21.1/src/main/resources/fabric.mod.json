@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "openmarry",
+  "version": "${version}",
+  "name": "OpenMarry",
+  "description": "Marriages, a shared heart icon in the tab list, wedding effects and spouse bonuses.",
+  "authors": ["OpenMarry"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["ru.openmarry.fabric.OpenMarryMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "placeholder-api": "*"
+  }
+}

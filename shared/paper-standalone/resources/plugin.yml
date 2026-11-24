@@ -1,0 +1,18 @@
+name: OpenMarry
+version: 1.0.0
+main: ru.openmarry.paper.OpenMarryPlugin
+api-version: '1.21'
+softdepend: [PlaceholderAPI]
+description: Marriages, a shared heart icon in the tab list, wedding effects and spouse bonuses
+authors: [OpenMarry]
+
+commands:
+  marry:
+    description: Propose to a player, or accept/deny a proposal
+    usage: /marry <player> | accept | deny
+  divorce:
+    description: End your marriage
+    usage: /divorce
+  heartcolor:
+    description: Change the heart color of your marriage
+    usage: /heartcolor <color>
